@@ -56,6 +56,8 @@
 #![allow(clippy::cast_sign_loss)]
 #![allow(clippy::cast_possible_wrap)]
 
+use serde::{Deserialize, Serialize};
+
 // Branch hints using #[cold] attribute (stable Rust)
 #[cold]
 #[inline(never)]
@@ -122,7 +124,7 @@ const DELTA_ENCODE: [(u32, u8); 21] = [
 /// Accumulates temperature readings and produces compressed output.
 /// Optimized for cache efficiency with compact struct layout.
 #[repr(C)]
-#[derive(Clone)]
+#[derive(Clone, Serialize, Deserialize)]
 pub struct Encoder {
     base_ts: u64,
     last_ts: u64,
