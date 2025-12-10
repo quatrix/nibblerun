@@ -88,7 +88,7 @@ fn div_by_interval(x: u64, interval: u16) -> u64 {
 /// Compute average with proper rounding (round half away from zero)
 /// This ensures the average is always within [min, max] of the input values
 #[inline]
-fn rounded_avg(sum: i32, count: u8) -> i32 {
+fn rounded_avg(sum: i32, count: u16) -> i32 {
     if count <= 1 {
         return sum;
     }
@@ -100,25 +100,22 @@ fn rounded_avg(sum: i32, count: u8) -> i32 {
     }
 }
 
-/// Offset for storing signed sum in unsigned bits (±1M range)
-const PENDING_SUM_OFFSET: i32 = 1_048_576;
-
-/// Pack pending averaging state into bits_in_accum
-/// - Bits 0-5: actual bits_in_accum (0-63)
-/// - Bits 6-10: pending_count (0-31)
-/// - Bits 11-31: pending_sum + offset (21 bits)
+/// Pack pending averaging state into pending_state (u64)
+/// - Bits 0-5: actual bit accumulator count (0-63)
+/// - Bits 6-15: pending_count (0-1023)
+/// - Bits 16-47: pending_sum as i32 (32 bits, stored as u32)
 #[inline]
-fn pack_pending(bits: u32, count: u8, sum: i32) -> u32 {
-    (((sum + PENDING_SUM_OFFSET) as u32) << 11) | ((count as u32 & 0x1F) << 6) | (bits & 0x3F)
+fn pack_pending(bits: u32, count: u16, sum: i32) -> u64 {
+    ((sum as u32 as u64) << 16) | ((count as u64 & 0x3FF) << 6) | (bits as u64 & 0x3F)
 }
 
-/// Unpack pending averaging state from bits_in_accum
-/// Returns (bits_in_accum, pending_count, pending_sum)
+/// Unpack pending averaging state from pending_state
+/// Returns (bit_accum_count, pending_count, pending_sum)
 #[inline]
-fn unpack_pending(packed: u32) -> (u32, u8, i32) {
-    let bits = packed & 0x3F;
-    let count = ((packed >> 6) & 0x1F) as u8;
-    let sum = ((packed >> 11) as i32) - PENDING_SUM_OFFSET;
+fn unpack_pending(packed: u64) -> (u32, u16, i32) {
+    let bits = (packed & 0x3F) as u32;
+    let count = ((packed >> 6) & 0x3FF) as u16;
+    let sum = (packed >> 16) as u32 as i32;
     (bits, count, sum)
 }
 
@@ -158,11 +155,12 @@ pub struct Encoder {
     base_ts: u64,
     last_ts: u64,
     bit_accum: u64,
+    /// Packed state: bits 0-5 = bit_accum_count, bits 6-15 = pending_count (0-1023), bits 16-47 = pending_sum
+    pending_state: u64,
     data: Vec<u8>,
     prev_temp: i32,
     first_temp: i32,
     zero_run: u32,
-    bits_in_accum: u32,
     prev_logical_idx: u32,
     count: u16,
     interval: u16,
@@ -191,7 +189,7 @@ impl Encoder {
             prev_temp: 0,
             first_temp: 0,
             zero_run: 0,
-            bits_in_accum: 0,
+            pending_state: 0,
             prev_logical_idx: 0,
             count: 0,
             interval,
@@ -229,7 +227,7 @@ impl Encoder {
             self.prev_logical_idx = 0;
             self.count = 1;
             // Initialize pending: count=1, sum=temperature
-            self.bits_in_accum = pack_pending(0, 1, temperature);
+            self.pending_state = pack_pending(0, 1, temperature);
             return;
         }
 
@@ -248,11 +246,11 @@ impl Encoder {
 
         // Same interval - accumulate for averaging
         if logical_idx == self.prev_logical_idx {
-            let (bits, count, sum) = unpack_pending(self.bits_in_accum);
-            if count < 31 {
-                self.bits_in_accum = pack_pending(bits, count + 1, sum + temperature);
+            let (bits, count, sum) = unpack_pending(self.pending_state);
+            if count < 1023 {
+                self.pending_state = pack_pending(bits, count + 1, sum.saturating_add(temperature));
             }
-            // If count >= 31, silently ignore (shouldn't happen in practice)
+            // If count >= 1023, silently ignore (shouldn't happen in practice)
             self.last_ts = ts;
             return;
         }
@@ -274,15 +272,15 @@ impl Encoder {
         self.last_ts = ts;
         self.count += 1;
         // Initialize pending for new interval: count=1, sum=temperature
-        let (bits, _, _) = unpack_pending(self.bits_in_accum);
-        self.bits_in_accum = pack_pending(bits, 1, temperature);
+        let (bits, _, _) = unpack_pending(self.pending_state);
+        self.pending_state = pack_pending(bits, 1, temperature);
     }
 
     /// Finalize the pending interval: compute average and encode the delta
     /// Called when crossing to a new interval or when serializing
     #[inline]
     fn finalize_pending_interval(&mut self) {
-        let (_, count, sum) = unpack_pending(self.bits_in_accum);
+        let (_, count, sum) = unpack_pending(self.pending_state);
         if count == 0 {
             return;
         }
@@ -307,8 +305,8 @@ impl Encoder {
         }
 
         // Clear pending state (re-extract bits after any encoding that may have occurred)
-        let (bits, _, _) = unpack_pending(self.bits_in_accum);
-        self.bits_in_accum = bits;  // Clear pending count/sum, keep actual bits
+        let (bits, _, _) = unpack_pending(self.pending_state);
+        self.pending_state = bits as u64;  // Clear pending count/sum, keep actual bits
     }
 
     #[inline]
@@ -340,7 +338,7 @@ impl Encoder {
         }
 
         // Extract pending state
-        let (actual_bits, pending_count, pending_sum) = unpack_pending(self.bits_in_accum);
+        let (actual_bits, pending_count, pending_sum) = unpack_pending(self.pending_state);
 
         // For single interval, no additional bits needed
         if self.count == 1 {
@@ -425,7 +423,7 @@ impl Encoder {
         }
 
         // Extract pending state
-        let (actual_bits, pending_count, pending_sum) = unpack_pending(self.bits_in_accum);
+        let (actual_bits, pending_count, pending_sum) = unpack_pending(self.pending_state);
 
         // Compute the average for the final pending interval
         let final_avg = if pending_count > 0 {
@@ -604,7 +602,7 @@ impl Encoder {
         }
 
         // Extract pending state
-        let (actual_bits, pending_count, pending_sum) = unpack_pending(self.bits_in_accum);
+        let (actual_bits, pending_count, pending_sum) = unpack_pending(self.pending_state);
 
         // Compute the average for the final pending interval
         let final_avg = if pending_count > 0 {
@@ -700,7 +698,7 @@ impl Encoder {
     #[inline]
     fn write_bits(&mut self, value: u32, num_bits: u32) {
         // Extract actual bits and pending state
-        let (mut bits, pending_count, pending_sum) = unpack_pending(self.bits_in_accum);
+        let (mut bits, pending_count, pending_sum) = unpack_pending(self.pending_state);
 
         self.bit_accum = (self.bit_accum << num_bits) | u64::from(value);
         bits += num_bits;
@@ -712,7 +710,7 @@ impl Encoder {
         }
 
         // Repack with pending state preserved
-        self.bits_in_accum = pack_pending(bits, pending_count, pending_sum);
+        self.pending_state = pack_pending(bits, pending_count, pending_sum);
     }
 
     #[inline]
@@ -2133,7 +2131,7 @@ mod tests {
 
     #[test]
     fn test_31_readings_same_interval() {
-        // max pending_count = 31 (5 bits)
+        // Test 31 readings in the same interval (legacy test, still valid)
         let base_ts = 1761955455u64;
         let mut enc = Encoder::new();
 
@@ -2157,7 +2155,7 @@ mod tests {
 
     #[test]
     fn test_32_readings_same_interval() {
-        // 32 readings exceeds pending_count max of 31 - 32nd should be ignored
+        // 32 readings now works (new limit is 1023)
         let base_ts = 1761955455u64;
         let mut enc = Encoder::new();
 
@@ -2171,8 +2169,150 @@ mod tests {
 
         let decoded = enc.decode();
         assert_eq!(decoded.len(), 2);
-        // First reading should be average of first 31 readings (all 20)
+        // All 32 readings are now included in the average
         assert_eq!(decoded[0].temperature, 20);
+    }
+
+    #[test]
+    fn test_100_readings_same_interval() {
+        // Test 100 readings in the same interval
+        let base_ts = 1761955455u64;
+        let mut enc = Encoder::new();
+
+        // 100 readings in same interval, alternating 20 and 30
+        for i in 0..100 {
+            let temp = if i % 2 == 0 { 20 } else { 30 };
+            enc.append(base_ts + i, temp);
+        }
+
+        // Move to next interval
+        enc.append(base_ts + 300, 25);
+
+        let decoded = enc.decode();
+        assert_eq!(decoded.len(), 2);
+        // Average of 50 x 20 + 50 x 30 = 1000 + 1500 = 2500 / 100 = 25
+        assert_eq!(decoded[0].temperature, 25);
+    }
+
+    #[test]
+    fn test_500_readings_same_interval() {
+        // Test 500 readings in the same interval
+        let base_ts = 1761955455u64;
+        let mut enc = Encoder::new();
+
+        // 500 readings in same interval
+        for i in 0..500 {
+            enc.append(base_ts + i, 22);
+        }
+
+        // Move to next interval
+        enc.append(base_ts + 300, 25);
+
+        let decoded = enc.decode();
+        assert_eq!(decoded.len(), 2);
+        assert_eq!(decoded[0].temperature, 22);
+    }
+
+    #[test]
+    fn test_1023_readings_same_interval() {
+        // Test max pending_count = 1023 (10 bits)
+        // Use 1-second interval so all 1023 readings fit in one interval
+        let base_ts = 1761955455u64;
+        let mut enc = Encoder::with_interval(2000); // 2000 second interval
+
+        // 1023 readings in same interval (all within first 1023 seconds)
+        for i in 0..1023 {
+            enc.append(base_ts + i, 20 + (i as i32 % 10)); // Temps 20-29
+        }
+
+        // Move to next interval
+        enc.append(base_ts + 2000, 25);
+
+        let decoded = enc.decode();
+        assert_eq!(decoded.len(), 2);
+
+        // Average of 1023 readings with temps 20-29 (102 complete cycles + partial)
+        let expected_sum: i32 = (0..1023).map(|i| 20 + (i % 10)).sum();
+        let expected_avg = expected_sum / 1023;
+        assert_eq!(decoded[0].temperature, expected_avg);
+    }
+
+    #[test]
+    fn test_1024_readings_same_interval() {
+        // 1024 readings exceeds pending_count max of 1023 - 1024th should be ignored
+        let base_ts = 1761955455u64;
+        let mut enc = Encoder::with_interval(2000); // 2000 second interval
+
+        // 1023 readings in same interval
+        for i in 0..1023 {
+            enc.append(base_ts + i, 20);
+        }
+        // This 1024th reading should be silently ignored (count already at 1023)
+        enc.append(base_ts + 1023, 100);
+
+        // Move to next interval
+        enc.append(base_ts + 2000, 25);
+
+        let decoded = enc.decode();
+        assert_eq!(decoded.len(), 2);
+        // Average should be 20, not influenced by the ignored 100
+        assert_eq!(decoded[0].temperature, 20);
+    }
+
+    #[test]
+    fn test_high_count_with_large_temps() {
+        // Test that sum doesn't overflow with many readings of large temps
+        let base_ts = 1761955455u64;
+        let mut enc = Encoder::new();
+
+        // 500 readings of temperature 500 (sum = 250,000)
+        for i in 0..500 {
+            enc.append(base_ts + i, 500);
+        }
+
+        enc.append(base_ts + 300, 25);
+
+        let decoded = enc.decode();
+        assert_eq!(decoded.len(), 2);
+        assert_eq!(decoded[0].temperature, 500);
+    }
+
+    #[test]
+    fn test_high_count_with_negative_temps() {
+        // Test averaging with many negative temperatures
+        let base_ts = 1761955455u64;
+        let mut enc = Encoder::new();
+
+        // 500 readings of temperature -500 (sum = -250,000)
+        for i in 0..500 {
+            enc.append(base_ts + i, -500);
+        }
+
+        enc.append(base_ts + 300, 25);
+
+        let decoded = enc.decode();
+        assert_eq!(decoded.len(), 2);
+        assert_eq!(decoded[0].temperature, -500);
+    }
+
+    #[test]
+    fn test_high_count_mixed_temps() {
+        // Test averaging with mix of positive and negative temps
+        let base_ts = 1761955455u64;
+        let mut enc = Encoder::new();
+
+        // 400 readings: alternating -100 and +100
+        for i in 0..400 {
+            let temp = if i % 2 == 0 { -100 } else { 100 };
+            enc.append(base_ts + i, temp);
+        }
+
+        enc.append(base_ts + 300, 25);
+
+        let decoded = enc.decode();
+        assert_eq!(decoded.len(), 2);
+        // Average of 200 x -100 + 200 x 100 = 0
+        assert_eq!(decoded[0].temperature, 0);
     }
 
     #[test]
