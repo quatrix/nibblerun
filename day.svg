@@ -317,9 +317,11 @@
     <rect x="316" y="254" width="14" height="14" fill="#FFE0B2" class="bit"/>
     <text x="323" y="264" text-anchor="middle" font-size="9">1</text>
     <rect x="332" y="254" width="14" height="14" fill="#FFE0B2" class="bit"/>
-    <text x="339" y="264" text-anchor="middle" font-size="9">0</text>
+    <text x="339" y="264" text-anchor="middle" font-size="9">1</text>
     <rect x="348" y="254" width="14" height="14" fill="#FFE0B2" class="bit"/>
     <text x="355" y="264" text-anchor="middle" font-size="9">0</text>
+    <rect x="364" y="254" width="14" height="14" fill="#FFE0B2" class="bit"/>
+    <text x="371" y="264" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-9" onmouseover="highlight(9)" onmouseout="unhighlight(9)">
     <rect x="15" y="276" width="1090" height="22" class="row-bg"/>
@@ -329,9 +331,11 @@
     <rect x="316" y="278" width="14" height="14" fill="#FFE0B2" class="bit"/>
     <text x="323" y="288" text-anchor="middle" font-size="9">1</text>
     <rect x="332" y="278" width="14" height="14" fill="#FFE0B2" class="bit"/>
-    <text x="339" y="288" text-anchor="middle" font-size="9">0</text>
+    <text x="339" y="288" text-anchor="middle" font-size="9">1</text>
     <rect x="348" y="278" width="14" height="14" fill="#FFE0B2" class="bit"/>
-    <text x="355" y="288" text-anchor="middle" font-size="9">1</text>
+    <text x="355" y="288" text-anchor="middle" font-size="9">0</text>
+    <rect x="364" y="278" width="14" height="14" fill="#FFE0B2" class="bit"/>
+    <text x="371" y="288" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-10" onmouseover="highlight(10)" onmouseout="unhighlight(10)">
     <rect x="15" y="300" width="1090" height="22" class="row-bg"/>
@@ -341,9 +345,11 @@
     <rect x="316" y="302" width="14" height="14" fill="#FFE0B2" class="bit"/>
     <text x="323" y="312" text-anchor="middle" font-size="9">1</text>
     <rect x="332" y="302" width="14" height="14" fill="#FFE0B2" class="bit"/>
-    <text x="339" y="312" text-anchor="middle" font-size="9">0</text>
+    <text x="339" y="312" text-anchor="middle" font-size="9">1</text>
     <rect x="348" y="302" width="14" height="14" fill="#FFE0B2" class="bit"/>
-    <text x="355" y="312" text-anchor="middle" font-size="9">1</text>
+    <text x="355" y="312" text-anchor="middle" font-size="9">0</text>
+    <rect x="364" y="302" width="14" height="14" fill="#FFE0B2" class="bit"/>
+    <text x="371" y="312" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-11" onmouseover="highlight(11)" onmouseout="unhighlight(11)">
     <rect x="15" y="324" width="1090" height="22" class="row-bg"/>
@@ -359,15 +365,17 @@
     <rect x="364" y="326" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="371" y="336" text-anchor="middle" font-size="9">1</text>
     <rect x="380" y="326" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="387" y="336" text-anchor="middle" font-size="9">0</text>
+    <text x="387" y="336" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="326" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="403" y="336" text-anchor="middle" font-size="9">1</text>
+    <text x="403" y="336" text-anchor="middle" font-size="9">0</text>
     <rect x="412" y="326" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="419" y="336" text-anchor="middle" font-size="9">0</text>
+    <text x="419" y="336" text-anchor="middle" font-size="9">1</text>
     <rect x="428" y="326" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="435" y="336" text-anchor="middle" font-size="9">0</text>
     <rect x="444" y="326" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="451" y="336" text-anchor="middle" font-size="9">0</text>
+    <rect x="460" y="326" width="14" height="14" fill="#FFCC80" class="bit"/>
+    <text x="467" y="336" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-12" onmouseover="highlight(12)" onmouseout="unhighlight(12)">
     <rect x="15" y="348" width="1090" height="22" class="row-bg"/>
@@ -383,15 +391,17 @@
     <rect x="364" y="350" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="371" y="360" text-anchor="middle" font-size="9">1</text>
     <rect x="380" y="350" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="387" y="360" text-anchor="middle" font-size="9">0</text>
+    <text x="387" y="360" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="350" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="403" y="360" text-anchor="middle" font-size="9">0</text>
     <rect x="412" y="350" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="419" y="360" text-anchor="middle" font-size="9">1</text>
+    <text x="419" y="360" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="350" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="435" y="360" text-anchor="middle" font-size="9">1</text>
     <rect x="444" y="350" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="451" y="360" text-anchor="middle" font-size="9">1</text>
+    <rect x="460" y="350" width="14" height="14" fill="#FFCC80" class="bit"/>
+    <text x="467" y="360" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-13" onmouseover="highlight(13)" onmouseout="unhighlight(13)">
     <rect x="15" y="372" width="1090" height="22" class="row-bg"/>
@@ -407,15 +417,17 @@
     <rect x="364" y="374" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="371" y="384" text-anchor="middle" font-size="9">1</text>
     <rect x="380" y="374" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="387" y="384" text-anchor="middle" font-size="9">0</text>
+    <text x="387" y="384" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="374" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="403" y="384" text-anchor="middle" font-size="9">1</text>
+    <text x="403" y="384" text-anchor="middle" font-size="9">0</text>
     <rect x="412" y="374" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="419" y="384" text-anchor="middle" font-size="9">1</text>
     <rect x="428" y="374" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="435" y="384" text-anchor="middle" font-size="9">1</text>
     <rect x="444" y="374" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="451" y="384" text-anchor="middle" font-size="9">1</text>
+    <rect x="460" y="374" width="14" height="14" fill="#FFCC80" class="bit"/>
+    <text x="467" y="384" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-14" onmouseover="highlight(14)" onmouseout="unhighlight(14)">
     <rect x="15" y="396" width="1090" height="22" class="row-bg"/>
@@ -431,7 +443,7 @@
     <rect x="364" y="398" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="371" y="408" text-anchor="middle" font-size="9">1</text>
     <rect x="380" y="398" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="387" y="408" text-anchor="middle" font-size="9">0</text>
+    <text x="387" y="408" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="398" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="403" y="408" text-anchor="middle" font-size="9">0</text>
     <rect x="412" y="398" width="14" height="14" fill="#FFCC80" class="bit"/>
@@ -440,6 +452,8 @@
     <text x="435" y="408" text-anchor="middle" font-size="9">0</text>
     <rect x="444" y="398" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="451" y="408" text-anchor="middle" font-size="9">0</text>
+    <rect x="460" y="398" width="14" height="14" fill="#FFCC80" class="bit"/>
+    <text x="467" y="408" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-15" onmouseover="highlight(15)" onmouseout="unhighlight(15)">
     <rect x="15" y="420" width="1090" height="22" class="row-bg"/>
@@ -455,15 +469,17 @@
     <rect x="364" y="422" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="371" y="432" text-anchor="middle" font-size="9">1</text>
     <rect x="380" y="422" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="387" y="432" text-anchor="middle" font-size="9">0</text>
+    <text x="387" y="432" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="422" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="403" y="432" text-anchor="middle" font-size="9">1</text>
+    <text x="403" y="432" text-anchor="middle" font-size="9">0</text>
     <rect x="412" y="422" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="419" y="432" text-anchor="middle" font-size="9">0</text>
+    <text x="419" y="432" text-anchor="middle" font-size="9">1</text>
     <rect x="428" y="422" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="435" y="432" text-anchor="middle" font-size="9">1</text>
+    <text x="435" y="432" text-anchor="middle" font-size="9">0</text>
     <rect x="444" y="422" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="451" y="432" text-anchor="middle" font-size="9">0</text>
+    <text x="451" y="432" text-anchor="middle" font-size="9">1</text>
+    <rect x="460" y="422" width="14" height="14" fill="#FFCC80" class="bit"/>
+    <text x="467" y="432" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-16" onmouseover="highlight(16)" onmouseout="unhighlight(16)">
     <rect x="15" y="444" width="1090" height="22" class="row-bg"/>
@@ -479,15 +495,17 @@
     <rect x="364" y="446" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="371" y="456" text-anchor="middle" font-size="9">1</text>
     <rect x="380" y="446" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="387" y="456" text-anchor="middle" font-size="9">0</text>
+    <text x="387" y="456" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="446" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="403" y="456" text-anchor="middle" font-size="9">0</text>
     <rect x="412" y="446" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="419" y="456" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="446" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="435" y="456" text-anchor="middle" font-size="9">1</text>
+    <text x="435" y="456" text-anchor="middle" font-size="9">0</text>
     <rect x="444" y="446" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="451" y="456" text-anchor="middle" font-size="9">1</text>
+    <rect x="460" y="446" width="14" height="14" fill="#FFCC80" class="bit"/>
+    <text x="467" y="456" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-17" onmouseover="highlight(17)" onmouseout="unhighlight(17)">
     <rect x="15" y="468" width="1090" height="22" class="row-bg"/>
@@ -505,7 +523,7 @@
     <rect x="380" y="470" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="387" y="480" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="470" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="403" y="480" text-anchor="middle" font-size="9">0</text>
+    <text x="403" y="480" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="470" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="419" y="480" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="470" width="14" height="14" fill="#FFCDD2" class="bit"/>
@@ -521,13 +539,15 @@
     <rect x="508" y="470" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="515" y="480" text-anchor="middle" font-size="9">0</text>
     <rect x="524" y="470" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="531" y="480" text-anchor="middle" font-size="9">1</text>
+    <text x="531" y="480" text-anchor="middle" font-size="9">0</text>
     <rect x="540" y="470" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="547" y="480" text-anchor="middle" font-size="9">0</text>
+    <text x="547" y="480" text-anchor="middle" font-size="9">1</text>
     <rect x="556" y="470" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="563" y="480" text-anchor="middle" font-size="9">1</text>
+    <text x="563" y="480" text-anchor="middle" font-size="9">0</text>
     <rect x="572" y="470" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="579" y="480" text-anchor="middle" font-size="9">1</text>
+    <rect x="588" y="470" width="14" height="14" fill="#FFCDD2" class="bit"/>
+    <text x="595" y="480" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-18" onmouseover="highlight(18)" onmouseout="unhighlight(18)">
     <rect x="15" y="492" width="1090" height="22" class="row-bg"/>
@@ -545,9 +565,9 @@
     <rect x="380" y="494" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="387" y="504" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="494" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="403" y="504" text-anchor="middle" font-size="9">0</text>
+    <text x="403" y="504" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="494" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="419" y="504" text-anchor="middle" font-size="9">1</text>
+    <text x="419" y="504" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="494" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="435" y="504" text-anchor="middle" font-size="9">1</text>
     <rect x="444" y="494" width="14" height="14" fill="#FFCDD2" class="bit"/>
@@ -561,13 +581,15 @@
     <rect x="508" y="494" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="515" y="504" text-anchor="middle" font-size="9">1</text>
     <rect x="524" y="494" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="531" y="504" text-anchor="middle" font-size="9">0</text>
+    <text x="531" y="504" text-anchor="middle" font-size="9">1</text>
     <rect x="540" y="494" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="547" y="504" text-anchor="middle" font-size="9">1</text>
+    <text x="547" y="504" text-anchor="middle" font-size="9">0</text>
     <rect x="556" y="494" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="563" y="504" text-anchor="middle" font-size="9">0</text>
+    <text x="563" y="504" text-anchor="middle" font-size="9">1</text>
     <rect x="572" y="494" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="579" y="504" text-anchor="middle" font-size="9">1</text>
+    <text x="579" y="504" text-anchor="middle" font-size="9">0</text>
+    <rect x="588" y="494" width="14" height="14" fill="#FFCDD2" class="bit"/>
+    <text x="595" y="504" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-19" onmouseover="highlight(19)" onmouseout="unhighlight(19)">
     <rect x="15" y="516" width="1090" height="22" class="row-bg"/>
@@ -585,7 +607,7 @@
     <rect x="380" y="518" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="387" y="528" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="518" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="403" y="528" text-anchor="middle" font-size="9">0</text>
+    <text x="403" y="528" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="518" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="419" y="528" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="518" width="14" height="14" fill="#FFCDD2" class="bit"/>
@@ -595,19 +617,21 @@
     <rect x="460" y="518" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="467" y="528" text-anchor="middle" font-size="9">0</text>
     <rect x="476" y="518" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="483" y="528" text-anchor="middle" font-size="9">1</text>
+    <text x="483" y="528" text-anchor="middle" font-size="9">0</text>
     <rect x="492" y="518" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="499" y="528" text-anchor="middle" font-size="9">1</text>
     <rect x="508" y="518" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="515" y="528" text-anchor="middle" font-size="9">0</text>
+    <text x="515" y="528" text-anchor="middle" font-size="9">1</text>
     <rect x="524" y="518" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="531" y="528" text-anchor="middle" font-size="9">0</text>
     <rect x="540" y="518" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="547" y="528" text-anchor="middle" font-size="9">1</text>
+    <text x="547" y="528" text-anchor="middle" font-size="9">0</text>
     <rect x="556" y="518" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="563" y="528" text-anchor="middle" font-size="9">0</text>
+    <text x="563" y="528" text-anchor="middle" font-size="9">1</text>
     <rect x="572" y="518" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="579" y="528" text-anchor="middle" font-size="9">0</text>
+    <rect x="588" y="518" width="14" height="14" fill="#FFCDD2" class="bit"/>
+    <text x="595" y="528" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-20" onmouseover="highlight(20)" onmouseout="unhighlight(20)">
     <rect x="15" y="540" width="1090" height="22" class="row-bg"/>
@@ -625,9 +649,9 @@
     <rect x="380" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="387" y="552" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="403" y="552" text-anchor="middle" font-size="9">0</text>
+    <text x="403" y="552" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="419" y="552" text-anchor="middle" font-size="9">1</text>
+    <text x="419" y="552" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="435" y="552" text-anchor="middle" font-size="9">1</text>
     <rect x="444" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
@@ -635,19 +659,21 @@
     <rect x="460" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="467" y="552" text-anchor="middle" font-size="9">1</text>
     <rect x="476" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="483" y="552" text-anchor="middle" font-size="9">0</text>
+    <text x="483" y="552" text-anchor="middle" font-size="9">1</text>
     <rect x="492" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="499" y="552" text-anchor="middle" font-size="9">0</text>
     <rect x="508" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="515" y="552" text-anchor="middle" font-size="9">1</text>
+    <text x="515" y="552" text-anchor="middle" font-size="9">0</text>
     <rect x="524" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="531" y="552" text-anchor="middle" font-size="9">1</text>
     <rect x="540" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="547" y="552" text-anchor="middle" font-size="9">1</text>
     <rect x="556" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="563" y="552" text-anchor="middle" font-size="9">0</text>
+    <text x="563" y="552" text-anchor="middle" font-size="9">1</text>
     <rect x="572" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="579" y="552" text-anchor="middle" font-size="9">0</text>
+    <rect x="588" y="542" width="14" height="14" fill="#FFCDD2" class="bit"/>
+    <text x="595" y="552" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-21" onmouseover="highlight(21)" onmouseout="unhighlight(21)">
     <rect x="15" y="564" width="1090" height="22" class="row-bg"/>
@@ -665,13 +691,13 @@
     <rect x="380" y="566" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="387" y="576" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="566" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="403" y="576" text-anchor="middle" font-size="9">0</text>
+    <text x="403" y="576" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="566" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="419" y="576" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="566" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="435" y="576" text-anchor="middle" font-size="9">0</text>
     <rect x="444" y="566" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="451" y="576" text-anchor="middle" font-size="9">1</text>
+    <text x="451" y="576" text-anchor="middle" font-size="9">0</text>
     <rect x="460" y="566" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="467" y="576" text-anchor="middle" font-size="9">1</text>
     <rect x="476" y="566" width="14" height="14" fill="#FFCDD2" class="bit"/>
@@ -681,13 +707,15 @@
     <rect x="508" y="566" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="515" y="576" text-anchor="middle" font-size="9">1</text>
     <rect x="524" y="566" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="531" y="576" text-anchor="middle" font-size="9">0</text>
+    <text x="531" y="576" text-anchor="middle" font-size="9">1</text>
     <rect x="540" y="566" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="547" y="576" text-anchor="middle" font-size="9">1</text>
+    <text x="547" y="576" text-anchor="middle" font-size="9">0</text>
     <rect x="556" y="566" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="563" y="576" text-anchor="middle" font-size="9">0</text>
+    <text x="563" y="576" text-anchor="middle" font-size="9">1</text>
     <rect x="572" y="566" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="579" y="576" text-anchor="middle" font-size="9">0</text>
+    <rect x="588" y="566" width="14" height="14" fill="#FFCDD2" class="bit"/>
+    <text x="595" y="576" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-22" onmouseover="highlight(22)" onmouseout="unhighlight(22)">
     <rect x="15" y="588" width="1090" height="22" class="row-bg"/>
@@ -705,13 +733,13 @@
     <rect x="380" y="590" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="387" y="600" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="590" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="403" y="600" text-anchor="middle" font-size="9">0</text>
+    <text x="403" y="600" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="590" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="419" y="600" text-anchor="middle" font-size="9">1</text>
+    <text x="419" y="600" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="590" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="435" y="600" text-anchor="middle" font-size="9">1</text>
     <rect x="444" y="590" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="451" y="600" text-anchor="middle" font-size="9">0</text>
+    <text x="451" y="600" text-anchor="middle" font-size="9">1</text>
     <rect x="460" y="590" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="467" y="600" text-anchor="middle" font-size="9">0</text>
     <rect x="476" y="590" width="14" height="14" fill="#FFCDD2" class="bit"/>
@@ -721,13 +749,15 @@
     <rect x="508" y="590" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="515" y="600" text-anchor="middle" font-size="9">0</text>
     <rect x="524" y="590" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="531" y="600" text-anchor="middle" font-size="9">1</text>
+    <text x="531" y="600" text-anchor="middle" font-size="9">0</text>
     <rect x="540" y="590" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="547" y="600" text-anchor="middle" font-size="9">1</text>
     <rect x="556" y="590" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="563" y="600" text-anchor="middle" font-size="9">0</text>
+    <text x="563" y="600" text-anchor="middle" font-size="9">1</text>
     <rect x="572" y="590" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="579" y="600" text-anchor="middle" font-size="9">0</text>
+    <rect x="588" y="590" width="14" height="14" fill="#FFCDD2" class="bit"/>
+    <text x="595" y="600" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-23" onmouseover="highlight(23)" onmouseout="unhighlight(23)">
     <rect x="15" y="612" width="1090" height="22" class="row-bg"/>
@@ -745,11 +775,11 @@
     <rect x="380" y="614" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="387" y="624" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="614" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="403" y="624" text-anchor="middle" font-size="9">0</text>
+    <text x="403" y="624" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="614" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="419" y="624" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="614" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="435" y="624" text-anchor="middle" font-size="9">1</text>
+    <text x="435" y="624" text-anchor="middle" font-size="9">0</text>
     <rect x="444" y="614" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="451" y="624" text-anchor="middle" font-size="9">1</text>
     <rect x="460" y="614" width="14" height="14" fill="#FFCDD2" class="bit"/>
@@ -768,6 +798,8 @@
     <text x="563" y="624" text-anchor="middle" font-size="9">1</text>
     <rect x="572" y="614" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="579" y="624" text-anchor="middle" font-size="9">1</text>
+    <rect x="588" y="614" width="14" height="14" fill="#FFCDD2" class="bit"/>
+    <text x="595" y="624" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-24" onmouseover="highlight(24)" onmouseout="unhighlight(24)">
     <rect x="15" y="636" width="1090" height="22" class="row-bg"/>
@@ -785,11 +817,11 @@
     <rect x="380" y="638" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="387" y="648" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="638" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="403" y="648" text-anchor="middle" font-size="9">0</text>
+    <text x="403" y="648" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="638" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="419" y="648" text-anchor="middle" font-size="9">1</text>
+    <text x="419" y="648" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="638" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="435" y="648" text-anchor="middle" font-size="9">0</text>
+    <text x="435" y="648" text-anchor="middle" font-size="9">1</text>
     <rect x="444" y="638" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="451" y="648" text-anchor="middle" font-size="9">0</text>
     <rect x="460" y="638" width="14" height="14" fill="#FFCDD2" class="bit"/>
@@ -807,7 +839,9 @@
     <rect x="556" y="638" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="563" y="648" text-anchor="middle" font-size="9">0</text>
     <rect x="572" y="638" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="579" y="648" text-anchor="middle" font-size="9">1</text>
+    <text x="579" y="648" text-anchor="middle" font-size="9">0</text>
+    <rect x="588" y="638" width="14" height="14" fill="#FFCDD2" class="bit"/>
+    <text x="595" y="648" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-25" onmouseover="highlight(25)" onmouseout="unhighlight(25)">
     <rect x="15" y="660" width="1090" height="22" class="row-bg"/>
@@ -825,9 +859,9 @@
     <rect x="380" y="662" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="387" y="672" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="662" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="403" y="672" text-anchor="middle" font-size="9">0</text>
+    <text x="403" y="672" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="662" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="419" y="672" text-anchor="middle" font-size="9">1</text>
+    <text x="419" y="672" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="662" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="435" y="672" text-anchor="middle" font-size="9">1</text>
     <rect x="444" y="662" width="14" height="14" fill="#FFCDD2" class="bit"/>
@@ -837,17 +871,19 @@
     <rect x="476" y="662" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="483" y="672" text-anchor="middle" font-size="9">1</text>
     <rect x="492" y="662" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="499" y="672" text-anchor="middle" font-size="9">0</text>
+    <text x="499" y="672" text-anchor="middle" font-size="9">1</text>
     <rect x="508" y="662" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="515" y="672" text-anchor="middle" font-size="9">1</text>
+    <text x="515" y="672" text-anchor="middle" font-size="9">0</text>
     <rect x="524" y="662" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="531" y="672" text-anchor="middle" font-size="9">0</text>
+    <text x="531" y="672" text-anchor="middle" font-size="9">1</text>
     <rect x="540" y="662" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="547" y="672" text-anchor="middle" font-size="9">0</text>
     <rect x="556" y="662" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="563" y="672" text-anchor="middle" font-size="9">0</text>
     <rect x="572" y="662" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="579" y="672" text-anchor="middle" font-size="9">1</text>
+    <text x="579" y="672" text-anchor="middle" font-size="9">0</text>
+    <rect x="588" y="662" width="14" height="14" fill="#FFCDD2" class="bit"/>
+    <text x="595" y="672" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-26" onmouseover="highlight(26)" onmouseout="unhighlight(26)">
     <rect x="15" y="684" width="1090" height="22" class="row-bg"/>
@@ -879,15 +915,17 @@
     <rect x="364" y="734" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="371" y="744" text-anchor="middle" font-size="9">1</text>
     <rect x="380" y="734" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="387" y="744" text-anchor="middle" font-size="9">0</text>
+    <text x="387" y="744" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="734" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="403" y="744" text-anchor="middle" font-size="9">1</text>
+    <text x="403" y="744" text-anchor="middle" font-size="9">0</text>
     <rect x="412" y="734" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="419" y="744" text-anchor="middle" font-size="9">1</text>
     <rect x="428" y="734" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="435" y="744" text-anchor="middle" font-size="9">1</text>
     <rect x="444" y="734" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="451" y="744" text-anchor="middle" font-size="9">0</text>
+    <text x="451" y="744" text-anchor="middle" font-size="9">1</text>
+    <rect x="460" y="734" width="14" height="14" fill="#FFCC80" class="bit"/>
+    <text x="467" y="744" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-29" onmouseover="highlight(29)" onmouseout="unhighlight(29)">
     <rect x="15" y="756" width="1090" height="22" class="row-bg"/>
@@ -955,15 +993,17 @@
     <rect x="364" y="950" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="371" y="960" text-anchor="middle" font-size="9">1</text>
     <rect x="380" y="950" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="387" y="960" text-anchor="middle" font-size="9">0</text>
+    <text x="387" y="960" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="950" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="403" y="960" text-anchor="middle" font-size="9">1</text>
+    <text x="403" y="960" text-anchor="middle" font-size="9">0</text>
     <rect x="412" y="950" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="419" y="960" text-anchor="middle" font-size="9">1</text>
     <rect x="428" y="950" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="435" y="960" text-anchor="middle" font-size="9">1</text>
     <rect x="444" y="950" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="451" y="960" text-anchor="middle" font-size="9">0</text>
+    <text x="451" y="960" text-anchor="middle" font-size="9">1</text>
+    <rect x="460" y="950" width="14" height="14" fill="#FFCC80" class="bit"/>
+    <text x="467" y="960" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-38" onmouseover="highlight(38)" onmouseout="unhighlight(38)">
     <rect x="15" y="972" width="1090" height="22" class="row-bg"/>
@@ -975,7 +1015,7 @@
     <rect x="332" y="974" width="14" height="14" fill="#A5D6A7" class="bit"/>
     <text x="339" y="984" text-anchor="middle" font-size="9">1</text>
     <rect x="348" y="974" width="14" height="14" fill="#A5D6A7" class="bit"/>
-    <text x="355" y="984" text-anchor="middle" font-size="9">0</text>
+    <text x="355" y="984" text-anchor="middle" font-size="9">1</text>
     <rect x="364" y="974" width="14" height="14" fill="#A5D6A7" class="bit"/>
     <text x="371" y="984" text-anchor="middle" font-size="9">0</text>
     <rect x="380" y="974" width="14" height="14" fill="#A5D6A7" class="bit"/>
@@ -984,6 +1024,8 @@
     <text x="403" y="984" text-anchor="middle" font-size="9">0</text>
     <rect x="412" y="974" width="14" height="14" fill="#A5D6A7" class="bit"/>
     <text x="419" y="984" text-anchor="middle" font-size="9">0</text>
+    <rect x="428" y="974" width="14" height="14" fill="#A5D6A7" class="bit"/>
+    <text x="435" y="984" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-38" onmouseover="highlight(38)" onmouseout="unhighlight(38)">
     <rect x="15" y="996" width="1090" height="22" class="row-bg"/>
@@ -1044,15 +1086,17 @@
     <rect x="364" y="1190" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="371" y="1200" text-anchor="middle" font-size="9">1</text>
     <rect x="380" y="1190" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="387" y="1200" text-anchor="middle" font-size="9">0</text>
+    <text x="387" y="1200" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="1190" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="403" y="1200" text-anchor="middle" font-size="9">1</text>
+    <text x="403" y="1200" text-anchor="middle" font-size="9">0</text>
     <rect x="412" y="1190" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="419" y="1200" text-anchor="middle" font-size="9">1</text>
     <rect x="428" y="1190" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="435" y="1200" text-anchor="middle" font-size="9">1</text>
     <rect x="444" y="1190" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="451" y="1200" text-anchor="middle" font-size="9">0</text>
+    <text x="451" y="1200" text-anchor="middle" font-size="9">1</text>
+    <rect x="460" y="1190" width="14" height="14" fill="#FFCC80" class="bit"/>
+    <text x="467" y="1200" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-41" onmouseover="highlight(41)" onmouseout="unhighlight(41)">
     <rect x="15" y="1212" width="1090" height="22" class="row-bg"/>
@@ -1064,15 +1108,17 @@
     <rect x="332" y="1214" width="14" height="14" fill="#A5D6A7" class="bit"/>
     <text x="339" y="1224" text-anchor="middle" font-size="9">1</text>
     <rect x="348" y="1214" width="14" height="14" fill="#A5D6A7" class="bit"/>
-    <text x="355" y="1224" text-anchor="middle" font-size="9">0</text>
+    <text x="355" y="1224" text-anchor="middle" font-size="9">1</text>
     <rect x="364" y="1214" width="14" height="14" fill="#A5D6A7" class="bit"/>
-    <text x="371" y="1224" text-anchor="middle" font-size="9">1</text>
+    <text x="371" y="1224" text-anchor="middle" font-size="9">0</text>
     <rect x="380" y="1214" width="14" height="14" fill="#A5D6A7" class="bit"/>
     <text x="387" y="1224" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="1214" width="14" height="14" fill="#A5D6A7" class="bit"/>
-    <text x="403" y="1224" text-anchor="middle" font-size="9">0</text>
+    <text x="403" y="1224" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="1214" width="14" height="14" fill="#A5D6A7" class="bit"/>
-    <text x="419" y="1224" text-anchor="middle" font-size="9">1</text>
+    <text x="419" y="1224" text-anchor="middle" font-size="9">0</text>
+    <rect x="428" y="1214" width="14" height="14" fill="#A5D6A7" class="bit"/>
+    <text x="435" y="1224" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-41" onmouseover="highlight(41)" onmouseout="unhighlight(41)">
     <rect x="15" y="1236" width="1090" height="22" class="row-bg"/>
@@ -1198,15 +1244,17 @@
     <rect x="364" y="1742" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="371" y="1752" text-anchor="middle" font-size="9">1</text>
     <rect x="380" y="1742" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="387" y="1752" text-anchor="middle" font-size="9">0</text>
+    <text x="387" y="1752" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="1742" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="403" y="1752" text-anchor="middle" font-size="9">1</text>
+    <text x="403" y="1752" text-anchor="middle" font-size="9">0</text>
     <rect x="412" y="1742" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="419" y="1752" text-anchor="middle" font-size="9">1</text>
     <rect x="428" y="1742" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="435" y="1752" text-anchor="middle" font-size="9">1</text>
     <rect x="444" y="1742" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="451" y="1752" text-anchor="middle" font-size="9">0</text>
+    <text x="451" y="1752" text-anchor="middle" font-size="9">1</text>
+    <rect x="460" y="1742" width="14" height="14" fill="#FFCC80" class="bit"/>
+    <text x="467" y="1752" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-44" onmouseover="highlight(44)" onmouseout="unhighlight(44)">
     <rect x="15" y="1764" width="1090" height="22" class="row-bg"/>
@@ -1220,7 +1268,7 @@
     <rect x="348" y="1766" width="14" height="14" fill="#81C784" class="bit"/>
     <text x="355" y="1776" text-anchor="middle" font-size="9">1</text>
     <rect x="364" y="1766" width="14" height="14" fill="#81C784" class="bit"/>
-    <text x="371" y="1776" text-anchor="middle" font-size="9">0</text>
+    <text x="371" y="1776" text-anchor="middle" font-size="9">1</text>
     <rect x="380" y="1766" width="14" height="14" fill="#81C784" class="bit"/>
     <text x="387" y="1776" text-anchor="middle" font-size="9">0</text>
     <rect x="396" y="1766" width="14" height="14" fill="#81C784" class="bit"/>
@@ -1235,6 +1283,8 @@
     <text x="467" y="1776" text-anchor="middle" font-size="9">0</text>
     <rect x="476" y="1766" width="14" height="14" fill="#81C784" class="bit"/>
     <text x="483" y="1776" text-anchor="middle" font-size="9">0</text>
+    <rect x="492" y="1766" width="14" height="14" fill="#81C784" class="bit"/>
+    <text x="499" y="1776" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-44" onmouseover="highlight(44)" onmouseout="unhighlight(44)">
     <rect x="15" y="1788" width="1090" height="22" class="row-bg"/>
@@ -1367,9 +1417,9 @@
     <rect x="380" y="2318" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="387" y="2328" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="2318" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="403" y="2328" text-anchor="middle" font-size="9">0</text>
+    <text x="403" y="2328" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="2318" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="419" y="2328" text-anchor="middle" font-size="9">1</text>
+    <text x="419" y="2328" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="2318" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="435" y="2328" text-anchor="middle" font-size="9">1</text>
     <rect x="444" y="2318" width="14" height="14" fill="#FFCDD2" class="bit"/>
@@ -1379,47 +1429,29 @@
     <rect x="476" y="2318" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="483" y="2328" text-anchor="middle" font-size="9">1</text>
     <rect x="492" y="2318" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="499" y="2328" text-anchor="middle" font-size="9">0</text>
+    <text x="499" y="2328" text-anchor="middle" font-size="9">1</text>
     <rect x="508" y="2318" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="515" y="2328" text-anchor="middle" font-size="9">0</text>
     <rect x="524" y="2318" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="531" y="2328" text-anchor="middle" font-size="9">1</text>
+    <text x="531" y="2328" text-anchor="middle" font-size="9">0</text>
     <rect x="540" y="2318" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="547" y="2328" text-anchor="middle" font-size="9">1</text>
     <rect x="556" y="2318" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="563" y="2328" text-anchor="middle" font-size="9">0</text>
+    <text x="563" y="2328" text-anchor="middle" font-size="9">1</text>
     <rect x="572" y="2318" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="579" y="2328" text-anchor="middle" font-size="9">1</text>
+    <text x="579" y="2328" text-anchor="middle" font-size="9">0</text>
+    <rect x="588" y="2318" width="14" height="14" fill="#FFCDD2" class="bit"/>
+    <text x="595" y="2328" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-47" onmouseover="highlight(47)" onmouseout="unhighlight(47)">
     <rect x="15" y="2340" width="1090" height="22" class="gap-row"/>
-    <text x="20" y="2354" class="event-text">─── gap: 1 intervals ───</text>
+    <text x="20" y="2354" class="event-text">─── gap: 1 interval ───</text>
     <rect x="300" y="2342" width="14" height="14" fill="#E1BEE7" class="bit"/>
     <text x="307" y="2352" text-anchor="middle" font-size="9">1</text>
     <rect x="316" y="2342" width="14" height="14" fill="#E1BEE7" class="bit"/>
     <text x="323" y="2352" text-anchor="middle" font-size="9">1</text>
     <rect x="332" y="2342" width="14" height="14" fill="#E1BEE7" class="bit"/>
-    <text x="339" y="2352" text-anchor="middle" font-size="9">1</text>
-    <rect x="348" y="2342" width="14" height="14" fill="#E1BEE7" class="bit"/>
-    <text x="355" y="2352" text-anchor="middle" font-size="9">1</text>
-    <rect x="364" y="2342" width="14" height="14" fill="#E1BEE7" class="bit"/>
-    <text x="371" y="2352" text-anchor="middle" font-size="9">1</text>
-    <rect x="380" y="2342" width="14" height="14" fill="#E1BEE7" class="bit"/>
-    <text x="387" y="2352" text-anchor="middle" font-size="9">1</text>
-    <rect x="396" y="2342" width="14" height="14" fill="#E1BEE7" class="bit"/>
-    <text x="403" y="2352" text-anchor="middle" font-size="9">1</text>
-    <rect x="412" y="2342" width="14" height="14" fill="#E1BEE7" class="bit"/>
-    <text x="419" y="2352" text-anchor="middle" font-size="9">0</text>
-    <rect x="428" y="2342" width="14" height="14" fill="#E1BEE7" class="bit"/>
-    <text x="435" y="2352" text-anchor="middle" font-size="9">0</text>
-    <rect x="444" y="2342" width="14" height="14" fill="#E1BEE7" class="bit"/>
-    <text x="451" y="2352" text-anchor="middle" font-size="9">0</text>
-    <rect x="460" y="2342" width="14" height="14" fill="#E1BEE7" class="bit"/>
-    <text x="467" y="2352" text-anchor="middle" font-size="9">0</text>
-    <rect x="476" y="2342" width="14" height="14" fill="#E1BEE7" class="bit"/>
-    <text x="483" y="2352" text-anchor="middle" font-size="9">0</text>
-    <rect x="492" y="2342" width="14" height="14" fill="#E1BEE7" class="bit"/>
-    <text x="499" y="2352" text-anchor="middle" font-size="9">0</text>
+    <text x="339" y="2352" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-48" onmouseover="highlight(48)" onmouseout="unhighlight(48)">
     <rect x="15" y="2364" width="1090" height="22" class="row-bg"/>
@@ -1470,6 +1502,8 @@
     <text x="483" y="2424" text-anchor="middle" font-size="9">1</text>
     <rect x="492" y="2414" width="14" height="14" fill="#E1BEE7" class="bit"/>
     <text x="499" y="2424" text-anchor="middle" font-size="9">1</text>
+    <rect x="508" y="2414" width="14" height="14" fill="#E1BEE7" class="bit"/>
+    <text x="515" y="2424" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-51" onmouseover="highlight(51)" onmouseout="unhighlight(51)">
     <rect x="15" y="2436" width="1090" height="22" class="row-bg"/>
@@ -1497,7 +1531,7 @@
     <rect x="380" y="2462" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="387" y="2472" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="2462" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="403" y="2472" text-anchor="middle" font-size="9">0</text>
+    <text x="403" y="2472" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="2462" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="419" y="2472" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="2462" width="14" height="14" fill="#FFCDD2" class="bit"/>
@@ -1509,17 +1543,19 @@
     <rect x="476" y="2462" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="483" y="2472" text-anchor="middle" font-size="9">0</text>
     <rect x="492" y="2462" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="499" y="2472" text-anchor="middle" font-size="9">1</text>
+    <text x="499" y="2472" text-anchor="middle" font-size="9">0</text>
     <rect x="508" y="2462" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="515" y="2472" text-anchor="middle" font-size="9">1</text>
     <rect x="524" y="2462" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="531" y="2472" text-anchor="middle" font-size="9">1</text>
     <rect x="540" y="2462" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="547" y="2472" text-anchor="middle" font-size="9">0</text>
+    <text x="547" y="2472" text-anchor="middle" font-size="9">1</text>
     <rect x="556" y="2462" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="563" y="2472" text-anchor="middle" font-size="9">0</text>
     <rect x="572" y="2462" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="579" y="2472" text-anchor="middle" font-size="9">1</text>
+    <text x="579" y="2472" text-anchor="middle" font-size="9">0</text>
+    <rect x="588" y="2462" width="14" height="14" fill="#FFCDD2" class="bit"/>
+    <text x="595" y="2472" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-53" onmouseover="highlight(53)" onmouseout="unhighlight(53)">
     <rect x="15" y="2484" width="1090" height="22" class="row-bg"/>
@@ -1557,9 +1593,11 @@
     <rect x="316" y="2582" width="14" height="14" fill="#FFE0B2" class="bit"/>
     <text x="323" y="2592" text-anchor="middle" font-size="9">1</text>
     <rect x="332" y="2582" width="14" height="14" fill="#FFE0B2" class="bit"/>
-    <text x="339" y="2592" text-anchor="middle" font-size="9">0</text>
+    <text x="339" y="2592" text-anchor="middle" font-size="9">1</text>
     <rect x="348" y="2582" width="14" height="14" fill="#FFE0B2" class="bit"/>
     <text x="355" y="2592" text-anchor="middle" font-size="9">0</text>
+    <rect x="364" y="2582" width="14" height="14" fill="#FFE0B2" class="bit"/>
+    <text x="371" y="2592" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-58" onmouseover="highlight(58)" onmouseout="unhighlight(58)">
     <rect x="15" y="2604" width="1090" height="22" class="row-bg"/>
@@ -1575,15 +1613,17 @@
     <rect x="364" y="2606" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="371" y="2616" text-anchor="middle" font-size="9">1</text>
     <rect x="380" y="2606" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="387" y="2616" text-anchor="middle" font-size="9">0</text>
+    <text x="387" y="2616" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="2606" width="14" height="14" fill="#FFCC80" class="bit"/>
     <text x="403" y="2616" text-anchor="middle" font-size="9">0</text>
     <rect x="412" y="2606" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="419" y="2616" text-anchor="middle" font-size="9">1</text>
+    <text x="419" y="2616" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="2606" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="435" y="2616" text-anchor="middle" font-size="9">0</text>
+    <text x="435" y="2616" text-anchor="middle" font-size="9">1</text>
     <rect x="444" y="2606" width="14" height="14" fill="#FFCC80" class="bit"/>
-    <text x="451" y="2616" text-anchor="middle" font-size="9">1</text>
+    <text x="451" y="2616" text-anchor="middle" font-size="9">0</text>
+    <rect x="460" y="2606" width="14" height="14" fill="#FFCC80" class="bit"/>
+    <text x="467" y="2616" text-anchor="middle" font-size="9">1</text>
   </g>
   <g class="span-59" onmouseover="highlight(59)" onmouseout="unhighlight(59)">
     <rect x="15" y="2628" width="1090" height="22" class="row-bg"/>
@@ -1595,15 +1635,17 @@
     <rect x="332" y="2630" width="14" height="14" fill="#A5D6A7" class="bit"/>
     <text x="339" y="2640" text-anchor="middle" font-size="9">1</text>
     <rect x="348" y="2630" width="14" height="14" fill="#A5D6A7" class="bit"/>
-    <text x="355" y="2640" text-anchor="middle" font-size="9">0</text>
+    <text x="355" y="2640" text-anchor="middle" font-size="9">1</text>
     <rect x="364" y="2630" width="14" height="14" fill="#A5D6A7" class="bit"/>
     <text x="371" y="2640" text-anchor="middle" font-size="9">0</text>
     <rect x="380" y="2630" width="14" height="14" fill="#A5D6A7" class="bit"/>
     <text x="387" y="2640" text-anchor="middle" font-size="9">0</text>
     <rect x="396" y="2630" width="14" height="14" fill="#A5D6A7" class="bit"/>
-    <text x="403" y="2640" text-anchor="middle" font-size="9">1</text>
+    <text x="403" y="2640" text-anchor="middle" font-size="9">0</text>
     <rect x="412" y="2630" width="14" height="14" fill="#A5D6A7" class="bit"/>
-    <text x="419" y="2640" text-anchor="middle" font-size="9">0</text>
+    <text x="419" y="2640" text-anchor="middle" font-size="9">1</text>
+    <rect x="428" y="2630" width="14" height="14" fill="#A5D6A7" class="bit"/>
+    <text x="435" y="2640" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-59" onmouseover="highlight(59)" onmouseout="unhighlight(59)">
     <rect x="15" y="2652" width="1090" height="22" class="row-bg"/>
@@ -1666,7 +1708,7 @@
     <rect x="380" y="2870" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="387" y="2880" text-anchor="middle" font-size="9">1</text>
     <rect x="396" y="2870" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="403" y="2880" text-anchor="middle" font-size="9">0</text>
+    <text x="403" y="2880" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="2870" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="419" y="2880" text-anchor="middle" font-size="9">0</text>
     <rect x="428" y="2870" width="14" height="14" fill="#FFCDD2" class="bit"/>
@@ -1678,17 +1720,19 @@
     <rect x="476" y="2870" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="483" y="2880" text-anchor="middle" font-size="9">0</text>
     <rect x="492" y="2870" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="499" y="2880" text-anchor="middle" font-size="9">1</text>
+    <text x="499" y="2880" text-anchor="middle" font-size="9">0</text>
     <rect x="508" y="2870" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="515" y="2880" text-anchor="middle" font-size="9">1</text>
     <rect x="524" y="2870" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="531" y="2880" text-anchor="middle" font-size="9">0</text>
+    <text x="531" y="2880" text-anchor="middle" font-size="9">1</text>
     <rect x="540" y="2870" width="14" height="14" fill="#FFCDD2" class="bit"/>
     <text x="547" y="2880" text-anchor="middle" font-size="9">0</text>
     <rect x="556" y="2870" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="563" y="2880" text-anchor="middle" font-size="9">1</text>
+    <text x="563" y="2880" text-anchor="middle" font-size="9">0</text>
     <rect x="572" y="2870" width="14" height="14" fill="#FFCDD2" class="bit"/>
-    <text x="579" y="2880" text-anchor="middle" font-size="9">0</text>
+    <text x="579" y="2880" text-anchor="middle" font-size="9">1</text>
+    <rect x="588" y="2870" width="14" height="14" fill="#FFCDD2" class="bit"/>
+    <text x="595" y="2880" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-61" onmouseover="highlight(61)" onmouseout="unhighlight(61)">
     <rect x="15" y="2892" width="1090" height="22" class="gap-row"/>
@@ -1708,7 +1752,7 @@
     <rect x="396" y="2894" width="14" height="14" fill="#E1BEE7" class="bit"/>
     <text x="403" y="2904" text-anchor="middle" font-size="9">1</text>
     <rect x="412" y="2894" width="14" height="14" fill="#E1BEE7" class="bit"/>
-    <text x="419" y="2904" text-anchor="middle" font-size="9">0</text>
+    <text x="419" y="2904" text-anchor="middle" font-size="9">1</text>
     <rect x="428" y="2894" width="14" height="14" fill="#E1BEE7" class="bit"/>
     <text x="435" y="2904" text-anchor="middle" font-size="9">0</text>
     <rect x="444" y="2894" width="14" height="14" fill="#E1BEE7" class="bit"/>
@@ -1718,7 +1762,9 @@
     <rect x="476" y="2894" width="14" height="14" fill="#E1BEE7" class="bit"/>
     <text x="483" y="2904" text-anchor="middle" font-size="9">0</text>
     <rect x="492" y="2894" width="14" height="14" fill="#E1BEE7" class="bit"/>
-    <text x="499" y="2904" text-anchor="middle" font-size="9">1</text>
+    <text x="499" y="2904" text-anchor="middle" font-size="9">0</text>
+    <rect x="508" y="2894" width="14" height="14" fill="#E1BEE7" class="bit"/>
+    <text x="515" y="2904" text-anchor="middle" font-size="9">0</text>
   </g>
   <g class="span-62" onmouseover="highlight(62)" onmouseout="unhighlight(62)">
     <rect x="15" y="2916" width="1090" height="22" class="row-bg"/>
@@ -1740,9 +1786,9 @@
     <rect x="332" y="2942" width="14" height="14" fill="#FFF3E0" class="bit"/>
     <text x="339" y="2952" text-anchor="middle" font-size="9">1</text>
   </g>
-  <rect x="810" y="15" width="280" height="400" fill="#FAFAFA" class="legend-box" rx="4"/>
+  <rect x="810" y="15" width="280" height="440" fill="#FAFAFA" class="legend-box" rx="4"/>
   <text x="820" y="32" class="legend-title">ENCODING RULES</text>
-  <line x1="810" y1="20" x2="810" y2="420" stroke="#ddd" stroke-width="1"/>
+  <line x1="810" y1="20" x2="810" y2="460" stroke="#ddd" stroke-width="1"/>
   <text x="820" y="50" class="legend-item" font-weight="bold">Header (14 bytes)</text>
   <rect x="820" y="56" width="12" height="12" fill="#E3F2FD" class="legend-box"/>
   <text x="836" y="66" class="legend-item">base_ts_offset: 4 bytes</text>
@@ -1763,32 +1809,36 @@
   <text x="836" y="206" class="legend-item">Delta = ±1</text>
   <text x="836" y="217" class="legend-pattern">10x</text>
   <text x="1080" y="217" class="legend-pattern" text-anchor="end">3 bits</text>
-  <rect x="820" y="228" width="12" height="12" fill="#FFE0B2" class="legend-box"/>
-  <text x="836" y="238" class="legend-item">Delta = ±2</text>
-  <text x="836" y="249" class="legend-pattern">110x</text>
-  <text x="1080" y="249" class="legend-pattern" text-anchor="end">4 bits</text>
-  <rect x="820" y="260" width="12" height="12" fill="#A5D6A7" class="legend-box"/>
-  <text x="836" y="270" class="legend-item">Run 8-21 zeros</text>
-  <text x="836" y="281" class="legend-pattern">1110xxxx</text>
-  <text x="1080" y="281" class="legend-pattern" text-anchor="end">8 bits</text>
-  <rect x="820" y="292" width="12" height="12" fill="#81C784" class="legend-box"/>
-  <text x="836" y="302" class="legend-item">Run 22-149 zeros</text>
-  <text x="836" y="313" class="legend-pattern">11110xxxxxxx</text>
-  <text x="1080" y="313" class="legend-pattern" text-anchor="end">12 bits</text>
-  <rect x="820" y="324" width="12" height="12" fill="#FFCC80" class="legend-box"/>
-  <text x="836" y="334" class="legend-item">Delta = ±3 to ±10</text>
-  <text x="836" y="345" class="legend-pattern">111110xxxx</text>
-  <text x="1080" y="345" class="legend-pattern" text-anchor="end">10 bits</text>
-  <rect x="820" y="356" width="12" height="12" fill="#FFCDD2" class="legend-box"/>
-  <text x="836" y="366" class="legend-item">Delta = ±11 to ±1023</text>
-  <text x="836" y="377" class="legend-pattern">1111110xxxxxxxxxxx</text>
-  <text x="1080" y="377" class="legend-pattern" text-anchor="end">18 bits</text>
-  <rect x="820" y="388" width="12" height="12" fill="#E1BEE7" class="legend-box"/>
-  <text x="836" y="398" class="legend-item">Gap (1-64 intervals)</text>
-  <text x="836" y="409" class="legend-pattern">1111111xxxxxx</text>
-  <text x="1080" y="409" class="legend-pattern" text-anchor="end">13 bits</text>
-  <text x="820" y="440" class="legend-item" font-weight="bold">Notes</text>
-  <text x="820" y="456" class="legend-item">• x = sign bit (0=+, 1=-)</text>
-  <text x="820" y="470" class="legend-item">• Runs 1-7 use individual 0 bits</text>
-  <text x="820" y="484" class="legend-item">• Large gaps use multiple markers</text>
+  <rect x="820" y="228" width="12" height="12" fill="#E1BEE7" class="legend-box"/>
+  <text x="836" y="238" class="legend-item">Single-interval gap</text>
+  <text x="836" y="249" class="legend-pattern">110</text>
+  <text x="1080" y="249" class="legend-pattern" text-anchor="end">3 bits</text>
+  <rect x="820" y="260" width="12" height="12" fill="#FFE0B2" class="legend-box"/>
+  <text x="836" y="270" class="legend-item">Delta = ±2</text>
+  <text x="836" y="281" class="legend-pattern">1110x</text>
+  <text x="1080" y="281" class="legend-pattern" text-anchor="end">5 bits</text>
+  <rect x="820" y="292" width="12" height="12" fill="#A5D6A7" class="legend-box"/>
+  <text x="836" y="302" class="legend-item">Run 8-21 zeros</text>
+  <text x="836" y="313" class="legend-pattern">11110xxxx</text>
+  <text x="1080" y="313" class="legend-pattern" text-anchor="end">9 bits</text>
+  <rect x="820" y="324" width="12" height="12" fill="#81C784" class="legend-box"/>
+  <text x="836" y="334" class="legend-item">Run 22-149 zeros</text>
+  <text x="836" y="345" class="legend-pattern">111110xxxxxxx</text>
+  <text x="1080" y="345" class="legend-pattern" text-anchor="end">13 bits</text>
+  <rect x="820" y="356" width="12" height="12" fill="#FFCC80" class="legend-box"/>
+  <text x="836" y="366" class="legend-item">Delta = ±3 to ±10</text>
+  <text x="836" y="377" class="legend-pattern">1111110xxxx</text>
+  <text x="1080" y="377" class="legend-pattern" text-anchor="end">11 bits</text>
+  <rect x="820" y="388" width="12" height="12" fill="#FFCDD2" class="legend-box"/>
+  <text x="836" y="398" class="legend-item">Delta = ±11 to ±1023</text>
+  <text x="836" y="409" class="legend-pattern">11111110xxxxxxxxxxx</text>
+  <text x="1080" y="409" class="legend-pattern" text-anchor="end">19 bits</text>
+  <rect x="820" y="420" width="12" height="12" fill="#E1BEE7" class="legend-box"/>
+  <text x="836" y="430" class="legend-item">Gap (2-65 intervals)</text>
+  <text x="836" y="441" class="legend-pattern">11111111xxxxxx</text>
+  <text x="1080" y="441" class="legend-pattern" text-anchor="end">14 bits</text>
+  <text x="820" y="472" class="legend-item" font-weight="bold">Notes</text>
+  <text x="820" y="488" class="legend-item">• x = sign bit (0=+, 1=-)</text>
+  <text x="820" y="502" class="legend-item">• Runs 1-7 use individual 0 bits</text>
+  <text x="820" y="516" class="legend-item">• Large gaps use multiple markers</text>
 </svg>
